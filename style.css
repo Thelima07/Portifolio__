@@ -40,7 +40,7 @@ body {
   height: auto;
 }
 
-.bg4{
+.bg4 {
   background: #000;
   background-size: cover;
   width: 100%;
@@ -166,7 +166,7 @@ img {
   width: 50%;
   object-fit: contain;
   border-radius: 10px;
-  border-radius:20;
+  border-radius: 20;
 }
 
 /*botão Comprar*/
@@ -221,6 +221,49 @@ button:hover {
   color: #b13103;
 }
 
+/*search box*/
+
+.search-box {
+  position: absolute;
+  left: 15%;
+  border-radius: 50px;
+  height: 20px;
+  background: #f37d53;
+  padding: 10px;
+}
+
+.search-btn {
+  color: #000;
+  float: right;
+  width: 20px;
+  height: 20px;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 2s;
+  text-decoration: none;
+}
+
+.search-txt {
+  border: none;
+  background: none;
+  outline: none;
+  float: left;
+  padding: 0;
+  margin-top: -10px;
+  margin-left: 15px;
+  color: #000;
+  font-size: 15px;
+  transition: 0.4s;
+  line-height: 40px;
+  width: 300px;
+}
+
+.search-box:hover > .search-txt {
+  width: 240px;
+  padding: 0 6px;
+}
 
 /*Desktop-menu*/
 
@@ -384,7 +427,6 @@ header .right .imagem img {
 #about .box img {
   width: 200px;
   height: 200px;
- 
 }
 
 #about .box h2 {
@@ -464,7 +506,6 @@ span {
   width: 100%;
   height: 100vh;
 }
-
 
 #item-1:checked ~ .cards #song-3,
 #item-2:checked ~ .cards #song-1,
@@ -559,7 +600,7 @@ span {
   color: #000;
   font-weight: 600;
   background: #f84100;
-  transition: 1.0s ease;
+  transition: 1s ease;
 }
 
 #Contact .container .right .box {
@@ -574,7 +615,7 @@ span {
 }
 
 #Contact .container .right .box .icons {
-  width:  70px;
+  width: 70px;
   height: 50px;
   display: flex;
   flex-direction: column;
@@ -625,22 +666,62 @@ footer .container {
 }
 
 footer .container img {
-      width: 70px;
-      object-fit: contain;
-      background: transparent;
-      border-radius: 50px;
-      box-shadow: none;
+  width: 70px;
+  object-fit: contain;
+  background: transparent;
+  border-radius: 50px;
+  box-shadow: none;
 }
 
 footer .container p {
-  font-weight:500;
+  font-weight: 500;
   color: #f84100;
 }
 
 /*RESPONSIVIDADE*/
 
+@media screen and (max-width: 1024px) {
+  .search-box {
+    position: absolute;
+    left: 15%;
+    border-radius: 50px;
+    height: 15px;
+    background: #f37d53;
+    padding: 10px;
+  }
+
+  .search-btn {
+    color: #000;
+    float: right;
+    width: 15px;
+    height: 15px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 2s;
+    text-decoration: none;
+  }
+
+  .search-txt {
+    border: none;
+    background: none;
+    outline: none;
+    float: left;
+    padding: 0;
+    margin-top: -12px;
+    margin-left: 15px;
+    color: #000;
+    font-size: 15px;
+    transition: 0.4s;
+    line-height: 40px;
+    width: 250px;
+  }
+
+}
+
 @media screen and (max-width: 922px) {
-.text-pq {
+  .text-pq {
     font-size: 13px;
   }
 
@@ -650,6 +731,10 @@ footer .container p {
 
   .text-gd {
     font-size: 54px;
+  }
+
+  .search-box {
+    display: none;
   }
 }
 
@@ -686,11 +771,11 @@ footer .container p {
     height: 150px;
   }
 
-  footer .container p{
+  footer .container p {
     margin-top: 20px;
   }
 
-  html{
+  html {
     overflow-x: hidden;
   }
 }
@@ -792,7 +877,7 @@ footer .container p {
   }
 
   #Contact .container .left .box .social {
-    margin-bottom: -150px ;
+    margin-bottom: -150px;
   }
 
   #Contact .container .left .box i {
@@ -800,14 +885,12 @@ footer .container p {
   }
 
   #Contact .container .right .box {
-   display: none;
+    display: none;
   }
-
 }
 
 @media screen and (max-width: 428px) {
   header .right .imagem {
     width: 80%;
   }
-
 }
