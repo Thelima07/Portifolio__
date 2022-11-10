@@ -74,7 +74,7 @@ body {
 .line {
   width: 80%;
   height: 2px;
-  background-color: rgba(19, 18, 18, 0.842);
+  background-color: #f84100;
   position: relative;
   top: 4px;
 }
@@ -146,7 +146,6 @@ body {
   justify-content: center;
   width: 50%;
   margin-left: 25%;
-  min-height: 300px;
 }
 
 .content {
@@ -164,10 +163,10 @@ body {
 }
 
 img {
-  width: 100%;
+  width: 50%;
   object-fit: contain;
   border-radius: 10px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.705);
+  border-radius:20;
 }
 
 /*botão Comprar*/
@@ -238,23 +237,6 @@ button:hover {
   color: #000;
 }
 
-/*scroolbar*/
-
-body::-webkit-scrollbar {
-  width: 10px;
-  border-radius: 10px;
-}
-
-body::-webkit-scrollbar-track {
-  background: #fff;
-}
-
-body::-webkit-scrollbar-thumb {
-  background-color: #000;
-  border-radius: 5px;
-  border: 1px solid #fff;
-}
-
 /*Desktop-menu*/
 
 .desktop-menu ul {
@@ -308,9 +290,9 @@ body::-webkit-scrollbar-thumb {
 /* #### mobile-menu #### */
 
 .mobile-menu {
-  width: 95%;
+  width: 100%;
   height: auto;
-  position: absolute;
+  position: fixed;
   top: 5px;
   background: #f84100;
   display: none;
@@ -320,8 +302,8 @@ body::-webkit-scrollbar-thumb {
   position: absolute;
   right: 25px;
   top: 10px;
-  font-size: 23px;
-  color: #fff;
+  font-size: 25px;
+  color: #000;
   cursor: pointer;
 }
 
@@ -417,6 +399,7 @@ header .right .imagem img {
 #about .box img {
   width: 200px;
   height: 200px;
+ 
 }
 
 #about .box h2 {
@@ -480,14 +463,12 @@ span {
 #Service .container .card img {
   width: 100%;
   height: 100%;
-  object-fit: contain;
 }
 
 #Service .container .card button {
-  margin-top: 50px;
   margin-left: 30px;
   position: absolute;
-  bottom: 10px;
+  bottom: 1px;
   z-index: 9;
   text-transform: uppercase;
   cursor: pointer;
@@ -498,6 +479,7 @@ span {
   width: 100%;
   height: 100vh;
 }
+
 
 #item-1:checked ~ .cards #song-3,
 #item-2:checked ~ .cards #song-1,
@@ -647,6 +629,29 @@ span {
   flex-direction: row;
 }
 
+/*Footer*/
+
+footer .container {
+  width: 40%;
+  min-height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+footer .container img {
+      width: 70px;
+      object-fit: contain;
+      background: transparent;
+      border-radius: 50px;
+      box-shadow: none;
+}
+
+footer .container p {
+  font-weight:500;
+  color: #f84100;
+}
+
 /*RESPONSIVIDADE*/
 
 @media screen and (max-width: 922px) {
@@ -670,6 +675,7 @@ span {
 
   .mobile-menu {
     display: block;
+    position: absolute;
   }
 
   .desktop-menu ul {
@@ -679,16 +685,28 @@ span {
   .down {
     justify-content: space-between;
     flex-direction: column;
-    min-height: 600px;
   }
 
   .box {
-    width: 60%;
+    width: 100%;
   }
 
   #about .box img {
     width: 90%;
     margin-top: 20px;
+  }
+
+  footer .container {
+    flex-direction: column;
+    height: 150px;
+  }
+
+  footer .container p{
+    margin-top: 20px;
+  }
+
+  html{
+    overflow-x: hidden;
   }
 }
 
