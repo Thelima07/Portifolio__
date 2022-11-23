@@ -175,7 +175,7 @@ button {
   padding: 10px 20px;
   background: #f84100;
   color: #000;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 600;
   border: none;
   cursor: pointer;
@@ -224,6 +224,7 @@ button:hover {
 /*search box*/
 
 .search-box {
+  position: absolute;
   left: 15%;
   border-radius: 50px;
   height: 20px;
@@ -681,7 +682,6 @@ footer .container p {
 
 @media screen and (max-width: 1024px) {
   .search-box {
-    position: absolute;
     left: 15%;
     border-radius: 50px;
     height: 15px;
@@ -762,7 +762,7 @@ footer .container p {
 
   #about .box img {
     width: 90%;
-    margin-top: 20px;
+    margin-top: 10px;
   }
 
   footer .container {
@@ -819,6 +819,10 @@ footer .container p {
     width: 80%;
     height: auto;
     top: 20px;
+  }
+
+  #Service .container .card button {
+    bottom: -11px;
   }
 
   #item-1:checked ~ .cards #song-3,
@@ -892,4 +896,5 @@ footer .container p {
   header .right .imagem {
     width: 80%;
   }
+
 }
