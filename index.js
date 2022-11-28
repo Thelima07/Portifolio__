@@ -9,4 +9,8 @@
               x.style.display = "block";
           }
 }
+
+//validando e-mail 
+
+
     

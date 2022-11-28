@@ -224,7 +224,6 @@ button:hover {
 /*search box*/
 
 .search-box {
-  position: absolute;
   left: 15%;
   border-radius: 50px;
   height: 20px;
