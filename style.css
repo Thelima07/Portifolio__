@@ -446,32 +446,32 @@ span {
 
 /*Service*/
 
-#Service .box {
+#service .box {
   width: 80%;
   background: #fff;
 }
 
-#Service .box img {
+#service .box img {
   width: 300px;
   height: 500px;
   object-fit: contain;
 }
 
-#Service .box h2 {
+#service .box h2 {
   margin-top: 20px;
   text-align: center;
 }
 
-#Service .box p {
+#service .box p {
   margin-top: 20px;
   text-align: center;
 }
 
-#Service .container input[type="radio"] {
+#service .container input[type="radio"] {
   display: none;
 }
 
-#Service .container .card {
+#service .container .card {
   position: absolute;
   width: 40%;
   height: 80%;
@@ -486,12 +486,12 @@ span {
   cursor: pointer;
 }
 
-#Service .container .card img {
+#service .container .card img {
   width: 100%;
   height: 100%;
 }
 
-#Service .container .card button {
+#service .container .card button {
   margin-left: 30px;
   position: absolute;
   bottom: 1px;
@@ -500,7 +500,7 @@ span {
   cursor: pointer;
 }
 
-#Service .container .cards {
+#service .container .cards {
   position: relative;
   width: 100%;
   height: 100vh;
@@ -532,36 +532,36 @@ span {
 
 /* contatos*/
 
-#Contact .container {
+#contact .container {
   flex-direction: column;
   height: 90vh;
 }
 
-#Contact .container .titulo {
+#contact .container .titulo {
   min-height: 0;
   margin-bottom: 60px;
 }
 
-#Contact .container .left .box {
+#contact .container .left .box {
   width: 50%;
   height: 50%;
   border-radius: 20px;
   margin-bottom: 20px;
 }
 
-#Contact .container .left .box h1 {
+#contact .container .left .box h1 {
   margin-top: 30px;
   color: #fff;
 }
 
-#Contact .container .left .box form {
+#contact .container .left .box form {
   width: 100%;
   height: auto;
   display: flex;
   flex-direction: column;
 }
 
-#Contact .container .left .box form input {
+#contact .container .left .box form input {
   padding: 10px;
   margin-top: 15px;
   font-size: 15px;
@@ -570,23 +570,23 @@ span {
   outline: none;
 }
 
-#Contact .container .left .box .social {
+#contact .container .left .box .social {
   color: #fff;
   font-size: 32px;
 }
 
-#Contact .container .left .box .social i {
+#contact .container .left .box .social i {
   margin-left: 10px;
   margin-right: 10px;
   cursor: pointer;
   transition: 0.3s ease;
 }
 
-#Contact .container .left .box .social i:hover {
+#contact .container .left .box .social i:hover {
   color: #f84100;
 }
 
-#Contact .container .left .box form input[type="submit"] {
+#contact .container .left .box form input[type="submit"] {
   background: #fff;
   color: #000;
   cursor: pointer;
@@ -595,14 +595,14 @@ span {
   border-radius: 50px;
 }
 
-#Contact .container .left .box form input[type="submit"]:hover {
+#contact .container .left .box form input[type="submit"]:hover {
   color: #000;
   font-weight: 600;
   background: #f84100;
   transition: 1s ease;
 }
 
-#Contact .container .right .box {
+#contact .container .right .box {
   width: 70%;
   height: 60vh;
   color: #fff;
@@ -613,44 +613,44 @@ span {
   margin-bottom: 55px;
 }
 
-#Contact .container .right .box .icons {
+#contact .container .right .box .icons {
   width: 70px;
   height: 50px;
   display: flex;
   flex-direction: column;
 }
 
-#Contact .container .right .box .icons i {
+#contact .container .right .box .icons i {
   padding: 20px;
   font-size: 23px;
   color: #fff;
 }
 
-#Contact .container .right .box .text {
+#contact .container .right .box .text {
   width: 150px;
   height: 150px;
   display: flex;
   flex-direction: column;
 }
 
-#Contact .container .right .box .text p {
+#contact .container .right .box .text p {
   padding: 20px 0;
   font-size: 15px;
   font-weight: 500;
   color: #fff;
 }
 
-#Contact .container .right .box h1 {
+#contact .container .right .box h1 {
   margin-bottom: 30px;
   margin-top: -10px;
   color: #fff;
 }
 
-#Contact .container .right {
+#contact .container .right {
   margin: 2%;
 }
 
-#Contact .content {
+#contact .content {
   flex-direction: row;
 }
 
@@ -814,13 +814,13 @@ footer .container p {
     margin-top: 120px;
   }
 
-  #Service .container .card {
+  #service .container .card {
     width: 80%;
     height: auto;
     top: 20px;
   }
 
-  #Service .container .card button {
+  #service .container .card button {
     bottom: -11px;
   }
 
@@ -840,53 +840,53 @@ footer .container p {
     z-index: 0;
   }
 
-  #Contact .content {
+  #contact .content {
     flex-direction: column;
   }
 
-  #Contact .container .left {
+  #contact .container .left {
     height: 38vh;
   }
 
-  #Contact .container .right {
+  #contact .container .right {
     height: 38vh;
   }
 
-  #Contact .container .left .box {
+  #contact .container .left .box {
     width: 80%;
     height: 35vh;
   }
 
-  #Contact .container .right .box {
+  #contact .container .right .box {
     width: 80%;
     height: 35vh;
   }
 
-  #Contact .container .left .box h1 {
+  #contact .container .left .box h1 {
     font-size: 18px;
     margin-top: 20px;
   }
 
-  #Contact .container .left .box form {
+  #contact .container .left .box form {
     width: 80%;
   }
 
-  #Contact .container .left .box input[type="text"],
-  #Contact .container .left .box input[type="email"],
-  #Contact .container .left .box input[type="submit"] {
+  #contact .container .left .box input[type="text"],
+  #contact .container .left .box input[type="email"],
+  #contact .container .left .box input[type="submit"] {
     margin-top: 10px;
     font-size: 12px;
   }
 
-  #Contact .container .left .box .social {
+  #contact .container .left .box .social {
     margin-bottom: -150px;
   }
 
-  #Contact .container .left .box i {
+  #contact .container .left .box i {
     font-size: 20px;
   }
 
-  #Contact .container .right .box {
+  #contact .container .right .box {
     display: none;
   }
 }
